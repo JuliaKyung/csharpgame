@@ -55,9 +55,8 @@ namespace TextGametake2
                         "\r\n" +
                         "Ffej looks at you for a moment, weighing his options before doing the cat version of a shrug. 'Eh, why not.' He responds")
                     }) },
-                { Rm.RoomThree, new Room("Park", "a small park outside of the building. The ground is covered in a layer of fog. Somehow, you don't feel any more safe here than when you were inside.", Rm.RoomOne, Rm.NOEXIT, Rm.NOEXIT, Rm.RoomFour, new ThingList(
-                    "")) },
-                { Rm.RoomFour, new Room("Forest", "WOWOWOWOWO", Rm.NOEXIT, Rm.NOEXIT, Rm.RoomThree, Rm.NOEXIT, new ThingList())}
+                { Rm.RoomThree, new Room("Park", "a small park outside of the building. The ground is covered in a layer of fog. Somehow, you don't feel any more safe here than when you were inside.", Rm.RoomOne, Rm.NOEXIT, Rm.NOEXIT, Rm.RoomFour, new ThingList()) },
+                { Rm.RoomFour, new Room("Forest", "an opening to a forest. The trees don't look quite right, but you can't put your finger on why.", Rm.NOEXIT, Rm.NOEXIT, Rm.RoomThree, Rm.NOEXIT, new ThingList())}
             };
 
             _player = new Actor("You", "The Player", _map.RoomAt(Rm.RoomOne), new ThingList());
