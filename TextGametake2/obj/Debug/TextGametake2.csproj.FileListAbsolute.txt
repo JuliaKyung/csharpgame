@@ -1,0 +1,10 @@
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\bin\Debug\TextGametake2.exe.config
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\bin\Debug\TextGametake2.exe
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\bin\Debug\TextGametake2.pdb
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\obj\Debug\TextGametake2.csprojAssemblyReference.cache
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\obj\Debug\TextGametake2.Form1.resources
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\obj\Debug\TextGametake2.Properties.Resources.resources
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\obj\Debug\TextGametake2.csproj.GenerateResource.cache
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\obj\Debug\TextGametake2.csproj.CoreCompileInputs.cache
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\obj\Debug\TextGametake2.exe
+C:\Users\maeko\Desktop\immersive\textgame2\TextGametake2\TextGametake2\obj\Debug\TextGametake2.pdb
