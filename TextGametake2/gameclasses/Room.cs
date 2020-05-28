@@ -46,7 +46,7 @@ namespace TextGametake2.gameclasses
 
         public override string Describe()
         {
-            return $"[{Name}] this is {Description} " + Things.Describe();
+            return $"[{Name}]"; //this is {Description} " + Things.Describe();
         }
     }
 }

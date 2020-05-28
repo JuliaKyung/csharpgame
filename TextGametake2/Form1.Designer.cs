@@ -63,12 +63,13 @@
             this.outputbox.Location = new System.Drawing.Point(12, 36);
             this.outputbox.Multiline = true;
             this.outputbox.Name = "outputbox";
-            this.outputbox.Size = new System.Drawing.Size(883, 299);
+            this.outputbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.outputbox.Size = new System.Drawing.Size(1059, 299);
             this.outputbox.TabIndex = 0;
             // 
             // LookBTN
             // 
-            this.LookBTN.Location = new System.Drawing.Point(347, 383);
+            this.LookBTN.Location = new System.Drawing.Point(898, 386);
             this.LookBTN.Name = "LookBTN";
             this.LookBTN.Size = new System.Drawing.Size(91, 41);
             this.LookBTN.TabIndex = 1;
@@ -78,7 +79,7 @@
             // 
             // North
             // 
-            this.North.Location = new System.Drawing.Point(694, 356);
+            this.North.Location = new System.Drawing.Point(533, 401);
             this.North.Name = "North";
             this.North.Size = new System.Drawing.Size(93, 34);
             this.North.TabIndex = 2;
@@ -88,7 +89,7 @@
             // 
             // South
             // 
-            this.South.Location = new System.Drawing.Point(694, 436);
+            this.South.Location = new System.Drawing.Point(533, 481);
             this.South.Name = "South";
             this.South.Size = new System.Drawing.Size(93, 34);
             this.South.TabIndex = 3;
@@ -98,7 +99,7 @@
             // 
             // West
             // 
-            this.West.Location = new System.Drawing.Point(631, 396);
+            this.West.Location = new System.Drawing.Point(470, 441);
             this.West.Name = "West";
             this.West.Size = new System.Drawing.Size(93, 34);
             this.West.TabIndex = 4;
@@ -108,7 +109,7 @@
             // 
             // East
             // 
-            this.East.Location = new System.Drawing.Point(760, 396);
+            this.East.Location = new System.Drawing.Point(599, 441);
             this.East.Name = "East";
             this.East.Size = new System.Drawing.Size(93, 34);
             this.East.TabIndex = 5;
@@ -122,9 +123,9 @@
             this.SelectObj.Controls.Add(this.dropbtn);
             this.SelectObj.Controls.Add(this.takebtn);
             this.SelectObj.Controls.Add(this.objtextbox);
-            this.SelectObj.Location = new System.Drawing.Point(12, 373);
+            this.SelectObj.Location = new System.Drawing.Point(12, 386);
             this.SelectObj.Name = "SelectObj";
-            this.SelectObj.Size = new System.Drawing.Size(329, 110);
+            this.SelectObj.Size = new System.Drawing.Size(329, 183);
             this.SelectObj.TabIndex = 6;
             this.SelectObj.TabStop = false;
             this.SelectObj.Text = "Select Object";
@@ -168,7 +169,7 @@
             // 
             // inventory
             // 
-            this.inventory.Location = new System.Drawing.Point(347, 442);
+            this.inventory.Location = new System.Drawing.Point(898, 433);
             this.inventory.Name = "inventory";
             this.inventory.Size = new System.Drawing.Size(91, 41);
             this.inventory.TabIndex = 7;
@@ -183,7 +184,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(907, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1083, 33);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -202,33 +203,33 @@
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(168, 34);
             this.loadToolStripMenuItem.Text = "&Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(168, 34);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // restartToolStripMenuItem
             // 
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(168, 34);
             this.restartToolStripMenuItem.Text = "&Restart";
             this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(267, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(165, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(168, 34);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -238,14 +239,14 @@
             // 
             // commandbox
             // 
-            this.commandbox.Location = new System.Drawing.Point(12, 341);
+            this.commandbox.Location = new System.Drawing.Point(12, 344);
             this.commandbox.Name = "commandbox";
-            this.commandbox.Size = new System.Drawing.Size(462, 26);
+            this.commandbox.Size = new System.Drawing.Size(977, 26);
             this.commandbox.TabIndex = 9;
             // 
             // cmdbtn
             // 
-            this.cmdbtn.Location = new System.Drawing.Point(480, 338);
+            this.cmdbtn.Location = new System.Drawing.Point(995, 341);
             this.cmdbtn.Name = "cmdbtn";
             this.cmdbtn.Size = new System.Drawing.Size(76, 33);
             this.cmdbtn.TabIndex = 10;
@@ -257,7 +258,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.ClientSize = new System.Drawing.Size(907, 495);
+            this.ClientSize = new System.Drawing.Size(1083, 591);
             this.Controls.Add(this.cmdbtn);
             this.Controls.Add(this.commandbox);
             this.Controls.Add(this.inventory);
