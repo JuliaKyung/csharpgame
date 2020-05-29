@@ -55,7 +55,21 @@ namespace TextGametake2
                         "\r\n" +
                         "Ffej looks at you for a moment, weighing his options before doing the cat version of a shrug. 'Eh, why not.' He responds")
                     }) },
-                { Rm.Park, new Room("Park", "a small park outside of the building. The ground is covered in a layer of fog. Somehow, you don't feel any more safe here than when you were inside.", Rm.Classroom, Rm.NOEXIT, Rm.NOEXIT, Rm.Forest, new ThingList()) },
+                { Rm.Park, new Room("Park", "a small park outside of the building. The ground is covered in a layer of fog. Somehow, you don't feel any more safe here than when you were inside. Another ghost sits on one of the dusty benches.\r\n" +
+                "Though, instead of the calm blue aura that radiated from Nel, this one was red.", Rm.Classroom, Rm.NOEXIT, Rm.NOEXIT, Rm.Forest, new ThingList { 
+                    new Thing("ghost", "You approach the ghost cautiously, though he doesn't seem to notice you while he rants.\r\n" +
+                    "\r\n" +
+                    "'I can't believe it! I can't believe he took my power!!' he screamed into the void.\r\n" +
+                    "\r\n" +
+                    "'Who took your power?' You ask. The ghost finally seems to notice you, glaring fiercely.\r\n" +
+                    "\r\n" +
+                    "'ROGER! I just don't understand! How can one man have so much power!?'\r\n" +
+                    "\r\n" +
+                    "'Roger?' You ask, 'What did Roger do? Where is he?'\r\n" +
+                    "\r\n" +
+                    "'I taught him everything I know, and he BETRAYED me! Led this land to ruin!' The ghost shoves up to your face; you can almost feel his breath tickle your nose.\r\n" +
+                    "'If you see that man, fight him. And win. Tell him Vic sent you!'", false)
+                    }) },
                 { Rm.Forest, new Room("Forest", "an opening to a forest. The trees don't look quite right, but you can't put your finger on why.\r\n" +
                 "You see a crumpled piece of paper on the forest floor, strangely untouched. What could that paper be?", Rm.NOEXIT, Rm.NOEXIT, Rm.Park, Rm.NOEXIT, new ThingList { 
                     new Thing("paper", "You bend down to pick up the piece of paper. It looks to be a letter, though many of the words are smudged. You try to read what you can make out:\r\n" +
