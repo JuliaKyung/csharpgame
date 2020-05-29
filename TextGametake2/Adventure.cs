@@ -72,7 +72,7 @@ namespace TextGametake2
                     }) },
                 { Rm.Forest, new Room("Forest", "an opening to a forest. The trees don't look quite right, but you can't put your finger on why.\r\n" +
                 "You see a crumpled piece of paper on the forest floor, strangely untouched. What could that paper be?", Rm.NOEXIT, Rm.NOEXIT, Rm.Park, Rm.NOEXIT, new ThingList { 
-                    new Thing("paper", "You bend down to pick up the piece of paper. It looks to be a letter, though many of the words are smudged. You try to read what you can make out:\r\n" +
+                    new Thing("paper", "You bend down to pick up the piece of paper. It looks to be the start of a letter, though many of the words are smudged. You try to read what you can make out:\r\n" +
                     "'A C T I V A T E W I N D O W S ™'")
                     })}
             };
