@@ -22,9 +22,9 @@ namespace TextGametake2
              */
             _map = new RoomList
             {       //                                                                              N           S           W           E
-                {Rm.RoomOne, new Room("Classroom", "a deserted classroom. The desks are overturned and there are unintelligible symbols on the whiteboard. \r\n" +
+                {Rm.Classroom, new Room("Classroom", "a deserted classroom. The desks are overturned and there are unintelligible symbols on the whiteboard. \r\n" +
                 "Upon closer inspection, you think you can read the symbols. Code?\r\n" +
-                "A ghost of a man sits at one of the upright desks. ", Rm.NOEXIT, Rm.RoomThree, Rm.NOEXIT, Rm.RoomTwo,
+                "A ghost of a man sits at one of the upright desks. ", Rm.NOEXIT, Rm.Park, Rm.NOEXIT, Rm.Kitchen,
                     new ThingList
                     {
                         new Thing("code", "You look closer at the code haphazardly written all over the whiteboard. You can only make out a small bit of it: [type Msg = Increment | Decrement]", false),
@@ -37,8 +37,8 @@ namespace TextGametake2
                         "\r\n" +
                         "At that, Nel looks confused. 'Ghosts? There's ghosts here?'", false)
                     }) },
-                { Rm.RoomTwo, new Room("Kitchen", "a messy kitchen. It looks like there hasn't been anyone in here in years.\r\n" +
-                "You see a small black cat perched atop the counter, knocking over the old, rusted dishes. You wonder why it gives off a strange aura...", Rm.NOEXIT, Rm.NOEXIT, Rm.RoomOne, Rm.NOEXIT, 
+                { Rm.Kitchen, new Room("Kitchen", "a messy kitchen. It looks like there hasn't been anyone in here in years.\r\n" +
+                "You see a small black cat perched atop the counter, knocking over the old, rusted dishes. You wonder why it gives off a strange aura...", Rm.NOEXIT, Rm.NOEXIT, Rm.Classroom, Rm.NOEXIT, 
                     new ThingList { 
                         new Thing("cat", "You walk up slowly to the cat, that has since stopped knocking over dishes in favor of staring at you.\r\n" +
                         "'Hey there, Kitty--' you start, but are abruptly, and shockingly, cut off.\r\n" +
@@ -55,11 +55,15 @@ namespace TextGametake2
                         "\r\n" +
                         "Ffej looks at you for a moment, weighing his options before doing the cat version of a shrug. 'Eh, why not.' He responds")
                     }) },
-                { Rm.RoomThree, new Room("Park", "a small park outside of the building. The ground is covered in a layer of fog. Somehow, you don't feel any more safe here than when you were inside.", Rm.RoomOne, Rm.NOEXIT, Rm.NOEXIT, Rm.RoomFour, new ThingList()) },
-                { Rm.RoomFour, new Room("Forest", "an opening to a forest. The trees don't look quite right, but you can't put your finger on why.", Rm.NOEXIT, Rm.NOEXIT, Rm.RoomThree, Rm.NOEXIT, new ThingList())}
+                { Rm.Park, new Room("Park", "a small park outside of the building. The ground is covered in a layer of fog. Somehow, you don't feel any more safe here than when you were inside.", Rm.Classroom, Rm.NOEXIT, Rm.NOEXIT, Rm.Forest, new ThingList()) },
+                { Rm.Forest, new Room("Forest", "an opening to a forest. The trees don't look quite right, but you can't put your finger on why.\r\n" +
+                "You see a crumpled piece of paper on the forest floor, strangely untouched. What could that paper be?", Rm.NOEXIT, Rm.NOEXIT, Rm.Park, Rm.NOEXIT, new ThingList { 
+                    new Thing("paper", "You bend down to pick up the piece of paper. It looks to be a letter, though many of the words are smudged. You try to read what you can make out:\r\n" +
+                    "'A C T I V A T E W I N D O W S ™'")
+                    })}
             };
 
-            _player = new Actor("You", "The Player", _map.RoomAt(Rm.RoomOne), new ThingList());
+            _player = new Actor("You", "The Player", _map.RoomAt(Rm.Classroom), new ThingList());
         }
 
         public Actor Player

@@ -19,7 +19,7 @@ namespace TextGametake2.gameclasses
             {
                 foreach(Thing t in this)
                 {
-                    s = s + t.Description + "; ";
+                    s = s + t.Name + "; ";
                 }
             }
             return s;

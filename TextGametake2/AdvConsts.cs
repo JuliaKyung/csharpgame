@@ -8,10 +8,10 @@ namespace TextGametake2
 {
     public enum Rm
     {
-        RoomOne,
-        RoomTwo,
-        RoomThree,
-        RoomFour,
+        Classroom,
+        Kitchen,
+        Park,
+        Forest,
         NOEXIT
     }
 
